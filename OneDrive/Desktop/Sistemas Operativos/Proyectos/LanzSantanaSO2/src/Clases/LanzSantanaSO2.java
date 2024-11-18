@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
 package Clases;
+import Interfaz.ApplicationWindow;
 
 /**
  *
@@ -14,7 +15,16 @@ public class LanzSantanaSO2 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        ApplicationWindow appWindow = new ApplicationWindow();
+        AI ai = new AI(appWindow);
+        Administrator admin = new Administrator(ai, appWindow);
+        admin.start();
+        java.awt.EventQueue.invokeLater(new Runnable()  {
+            public void run() {
+                appWindow.setVisible(true);
+            }
+        });
+    
     }
     
 }

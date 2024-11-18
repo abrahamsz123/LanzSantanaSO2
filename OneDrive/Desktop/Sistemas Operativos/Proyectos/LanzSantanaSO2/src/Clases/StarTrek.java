@@ -14,10 +14,10 @@ import javax.swing.ImageIcon;
  * @author Abraham Santana
  */
 public class StarTrek {
-    Queue priority1SS = new Queue();
-    Queue priority2SS = new Queue();
-    Queue priority3SS = new Queue();
-    Queue refuerzoSS = new Queue();
+    Queue priority1ST = new Queue();
+    Queue priority2ST = new Queue();
+    Queue priority3ST = new Queue();
+    Queue refuerzoST = new Queue();
     
     
     public static class GeordiLaForge extends Characters {
@@ -252,11 +252,11 @@ public class StarTrek {
         }if (characters.Fuerza >= 8){
             cont ++;
         }if (cont == 4 || cont == 3){
-            priority1SS.enqueue(characters);
+            priority1ST.enqueue(characters);
         }else if (cont == 2 ){
-            priority2SS.enqueue(characters);
+            priority2ST.enqueue(characters);
         }if (cont == 0 || cont == 1){
-            priority3SS.enqueue(characters);
+            priority3ST.enqueue(characters);
         }
     }
 }
