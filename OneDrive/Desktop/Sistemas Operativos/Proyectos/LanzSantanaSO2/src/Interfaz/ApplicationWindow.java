@@ -124,14 +124,14 @@ public class ApplicationWindow extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Engravers MT", 1, 36)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(204, 0, 0));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Regular");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 450, 270, 60));
+        jLabel1.setText("STAR trek");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 500, 310, 60));
 
         jLabel2.setFont(new java.awt.Font("Engravers MT", 1, 36)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(0, 0, 204));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("Avatar");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 500, 230, -1));
+        jLabel2.setText("Star Wars");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 500, 300, -1));
 
         jLabel3.setFont(new java.awt.Font("Engravers MT", 0, 75)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 0));
@@ -187,7 +187,6 @@ public class ApplicationWindow extends javax.swing.JFrame {
 
         jLabel6.setFont(new java.awt.Font("Engravers MT", 1, 36)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(204, 0, 0));
-        jLabel6.setText("Show");
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 510, -1, -1));
 
         jLabel7.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
@@ -228,7 +227,7 @@ public class ApplicationWindow extends javax.swing.JFrame {
         jLabel10.setText("Winner List");
         getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, 180, -1));
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Arena.jpg"))); // NOI18N
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Arena2.1.jpg"))); // NOI18N
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1200, 680));
 
         pack();
