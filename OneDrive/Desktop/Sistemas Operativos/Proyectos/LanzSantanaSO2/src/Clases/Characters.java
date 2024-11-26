@@ -20,6 +20,8 @@ public class Characters {
     public boolean calidad;
     public String special;
     private Image photo;
+    private static int idCounter = 0; // Contador estático para IDs únicos
+    public final int id; // Atributo único por personaje
     
     public Image getPhoto() {
         return photo;
@@ -47,6 +49,15 @@ public class Characters {
         this.special = generarEspecial();
         this.name = name;
         this.counter = 0;
+        this.id = generateUniqueId();
+    }
+    
+    private int generateUniqueId() {
+        return ++idCounter; // Incrementa el contador global y devuelve el nuevo ID
+    }
+    
+    public int getId() {
+        return id;
     }
 
     public void incrementCounter(){
@@ -178,13 +189,14 @@ public class Characters {
                 "Character Details:\n" +
                         "------------------\n" +
                         "Name: %s\n" +
+                        "ID: %s\n" +
                         "Habilidad: %d\n" +
                         "PuntosVida: %d\n" +
                         "Fuerza: %d\n" +
                         "Agilidad: %d\n" +
                         "Calidad: %b\n" +
                         "Special: %s\n",
-                name, Habilidad, PuntosVida, Fuerza, Agilidad, calidad, special
+                name, id, Habilidad, PuntosVida, Fuerza, Agilidad, calidad, special
         );
     }
     
