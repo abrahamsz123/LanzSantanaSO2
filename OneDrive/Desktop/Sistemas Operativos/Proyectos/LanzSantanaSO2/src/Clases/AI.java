@@ -193,7 +193,7 @@ public class AI extends Thread {
         Node current = Winners.getHead();
         while (current != null) {
             Characters character = (Characters) current.getElement();
-            winnersString.append(character.getName()).append("\n");
+            winnersString.append(character.getName()).append(" ").append(character.getId()).append("\n");
             current = current.getNext();
         }
         return winnersString.toString();
