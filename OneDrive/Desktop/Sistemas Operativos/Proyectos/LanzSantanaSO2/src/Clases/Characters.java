@@ -196,6 +196,7 @@ public class Characters {
                         "Agilidad: %d\n" +
                         "Calidad: %b\n" +
                         "Special: %s\n",
+
                 name, id,  Habilidad, PuntosVida, Fuerza, Agilidad, calidad, special
         );
     }
